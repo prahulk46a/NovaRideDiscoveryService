@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: NovaRideEurekaDiscoveryService
+server:
+  port: 8761
+
+# This eureka server tells us discovery of other services =>  http://localhost:8761/ at this you will see registry status dashboard
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+  instance:
+    hostname: my-registry
